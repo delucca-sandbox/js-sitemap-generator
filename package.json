@@ -1,0 +1,33 @@
+{
+  "name": "@time-yurah/worker-sitemap",
+  "version": "1.0.0",
+  "description": "This service receives a RabbitMQ AMQP message to generate a sitemap based on data on a database.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:yurah/workers/sitemap-generator.git"
+  },
+  "author": "odelucca",
+  "license": "MIT",
+  "homepage": "https://github.com/odelucca/js-sitemap-generator#readme",
+  "bugs": {
+    "url": "https://github.com/odelucca/js-sitemap-generator/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:odelucca/js-sitemap-generator.git"
+  },
+  "dependencies": {
+    "@autolotto/bunnyhop": "^2.4.5",
+    "@sentry/node": "^4.3.2",
+    "aws-sdk": "^2.358.0",
+    "change-case": "^3.0.2",
+    "esm": "^3.0.84",
+    "node-fetch": "^2.3.0",
+    "sitemap": "^2.1.0"
+  }
+}

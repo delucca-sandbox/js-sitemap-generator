@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  worker-sitemap:
+    image: yurah.azurecr.io/worker-sitemap:$version
+    environment:
+      - NODE_ENV=production
+    external_links:
+      - infrastructure/message-broker-rabbitmq:message-broker-rabbitmq
